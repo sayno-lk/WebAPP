@@ -99,6 +99,17 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\MaryKay\css\main.css" />
+    <Content Include="admin\MaryKay\css\menu.css" />
+    <Content Include="admin\MaryKay\css\projectList.css" />
+    <Content Include="admin\MaryKay\css\userList.css" />
+    <Content Include="admin\MaryKay\js\load-image.all.min.js" />
+    <Content Include="admin\MaryKay\js\regValidate.js" />
+    <Content Include="admin\MaryKay\KoreaManage.aspx" />
+    <Content Include="admin\MaryKay\menu.ascx" />
+    <Content Include="admin\MaryKay\photoManage.aspx" />
+    <Content Include="admin\MaryKay\SelectQuestion.aspx" />
+    <Content Include="admin\MaryKay\zsManage.aspx" />
     <Content Include="baoye\css\animation.css" />
     <Content Include="baoye\css\main.css" />
     <Content Include="baoye\good.htm" />
@@ -481,6 +492,50 @@
     <Content Include="zhiwenTest\scripts\WeixinApi.js" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\MaryKay\ajax\marykayUploadImg.ashx.cs">
+      <DependentUpon>marykayUploadImg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MaryKay\KoreaManage.aspx.cs">
+      <DependentUpon>KoreaManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\MaryKay\KoreaManage.aspx.designer.cs">
+      <DependentUpon>KoreaManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MaryKay\menu.ascx.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\MaryKay\menu.ascx.designer.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MaryKay\photoManage.aspx.cs">
+      <DependentUpon>photoManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\MaryKay\photoManage.aspx.designer.cs">
+      <DependentUpon>photoManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MaryKay\SelectQuestion.aspx.cs">
+      <DependentUpon>SelectQuestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\MaryKay\SelectQuestion.aspx.designer.cs">
+      <DependentUpon>SelectQuestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MaryKay\zsManage.aspx.cs">
+      <DependentUpon>zsManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\MaryKay\zsManage.aspx.designer.cs">
+      <DependentUpon>zsManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\AddReceipt.ashx.cs">
+      <DependentUpon>AddReceipt.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\wxJsSdk.ashx.cs">
+      <DependentUpon>wxJsSdk.ashx</DependentUpon>
+    </Compile>
     <Compile Include="DB\marykay\MaryKayDB.Designer.cs" />
     <Compile Include="DB\VoteEntity.Designer.cs" />
     <Compile Include="DB\WebServiceDB.Designer.cs" />
@@ -578,6 +633,9 @@
     <Content Include="GetingeGroup\ajax\getingeGroup.ashx" />
     <Content Include="packages.config" />
     <Fakes Include="Fakes\NPOI.fakes" />
+    <Content Include="admin\MaryKay\ajax\marykayUploadImg.ashx" />
+    <Content Include="ajax\AddReceipt.ashx" />
+    <Content Include="ajax\wxJsSdk.ashx" />
     <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
   </ItemGroup>
   <PropertyGroup>
