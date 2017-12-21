@@ -1,0 +1,335 @@
+﻿
+/*个人信息----开始*/
+#empPro
+{
+    display: none;
+}
+#empInfo
+{
+}
+.content input.i-input
+{
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.item .i-shadow
+{
+    border: none; /*box-shadow: inset 0 2px 3px 1px #000; border-radius: 5px;background-color: #229BCF;*/
+    border-bottom: 1px white solid; 
+    height: 35px;
+    line-height: 35px;
+}
+.item .i-bor
+{
+    border: 0;
+    background-color: #fff;
+    padding-left: 5px;
+}
+
+.item select option
+{
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+.content .item .i-left
+{
+    width: 27%;
+    text-align: right;
+    height: 37px;
+    line-height: 37px;
+}
+.content .item .i-left span
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.content .item .i-right
+{
+    width: 65%;
+    text-align: left;
+}
+.content .item .i-right p
+{
+    width: 92%;
+    font-size: 11px;
+    clear: both;
+}
+.content .item .i-right .i-input
+{
+    font-size: 15px;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    text-align: left;
+    margin: 5px 5px;
+    width: 90%;
+    background: none;
+    border: none;
+    border-bottom: 1px white solid;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+.content .item .i-right .i-check
+{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 5px;
+}
+.content .item .i-right .i-span3
+{
+    font-family: 黑体;
+    font-size: 15px;
+    color: white;
+    padding-bottom: 2px;
+    border-bottom: 1px solid red;
+}
+.content .item .i-right .i-code
+{
+    width: 40%;
+}
+.content .item .i-right .img-code
+{
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+    width: 60px;
+    margin: 2px 10px;
+}
+.content .item .i-right .vcimg .vcimg-show, .vcimg-yulan
+{
+    height: 40px;
+    line-height: 40px;
+    float: left;
+}
+.content .item .i-right .i-span2
+{
+    color: black;
+    font-family: 黑体;
+    font-size: 14px;
+}
+.content .item .i-right .vcimg-show
+{
+    margin: 0px;
+    width: 80px;
+    text-align: center;
+    border: 1px #ccc solid;
+    cursor: pointer;
+    overflow: hidden;
+    padding-top: 0px !important;
+    position: relative;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 5px;
+}
+.content .item .i-right a
+{
+    font-family: 黑体;
+    font-size: 14px;
+}
+.content .item .i-right .vcimg-yulan
+{
+    display: none;
+    width: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.content .item .i-right .vcimg-yulan a
+{
+    text-decoration: none;
+}
+.content .fileUpload
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 300px !important;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /*移动设备点击无蓝色边框*/
+}
+/*个人信息----结束*/
+/*项目选择层----开始*/
+.content .pro
+{
+    min-height: 300px;
+    text-align: left;
+    padding: 0px 20px;
+    padding-left: 50px;
+}
+.pro .item .i-left
+{
+    width: 50%;
+}
+.pro .pro-select
+{
+    padding-top: 10px;
+    overflow: hidden;
+    clear: both;
+    font-size: 16px;
+    font-weight: bold;
+}
+.pro .pro-select .protype
+{
+    display: inline-block;
+    margin: 5px 0px;
+}
+.pro .pro-select .item
+{
+    padding-top: 5px;
+}
+.pro .pro-select .item input
+{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 5px;
+}
+.pro .pro-select .item .i-rdo, .pro .pro-select .item .i-chk
+{
+    width: 50%;
+}
+.pro-select .i-label
+{
+    font-family: 黑体;
+    font-size: 15px;
+    /*height: 23px;
+    line-height: 23px;*/
+    vertical-align: middle;
+}
+.pro .pro-select .item .i-tip
+{
+    width: 30px;
+}
+.pro .pro-select .item .i-tip img
+{
+    width: 100%;
+}
+.pro .i-rdo span, .pro .i-chk span
+{
+    font-family: 黑体;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.pro .item .i-tip
+{
+    margin-left: 10px;
+    text-align: left;
+}
+.pro .i-tip span
+{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    background: url(/images/question1.png) no-repeat;
+    background-size: 100%;
+}
+/*项目选择层----结束*/
+
+/*名片展示层----开始*/
+.proExplanation
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*遮罩层*/
+.proExplanation-max
+{
+    background-color: black;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+}
+.proExplanationShow
+{
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+    -webkit-transform: translateX(-50%) translateY(-55%);
+    -moz-transform: translateX(-50%) translateY(-55%);
+    -ms-transform: translateX(-50%) translateY(-55%);
+    transform: translateX(-50%) translateY(-55%);
+}
+.proExplanationShow .pe-title
+{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+.proExplanationShow .pe-title .headImg
+{
+    width: 100%;
+}
+.proExplanationShow .pe-title .pe-span
+{
+    font-family: 黑体;
+    font-size: 15px;
+    margin-left: 15px;
+}
+.btn-close
+{
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.btn-close img
+{
+    width: 100%;
+}
+.pe-conent
+{
+    width: 100%;
+}
+.pe-conent img
+{
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+}
+.imgTip
+{
+    display: none;
+}
+.pe-bottom
+{
+    height: 35px;
+    border: 0px red solid;
+    margin: 15px auto;
+}
+.pe-btn
+{
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    background: #e74c3c;
+    color: White;
+    margin-left: 10px;
+    cursor: pointer;
+}
+/*名片展示层----结束*/

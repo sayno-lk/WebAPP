@@ -1,0 +1,130 @@
+﻿.sec02 .p1
+{
+    background-image: url(../img/1-1.png);
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+.sec02 .p2
+{
+    background-image: url(../img/1-2.png);
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+.sec02 .p3
+{
+    background-image: url(../img/1-3.png);
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+.sec04 .content
+{
+    background-image: url(../img/p4/p4_content.png);
+    top: 40%;
+    left: 0%;
+    width: 100%;
+    height: 16%;
+    opacity: 0;
+}
+.page-show.sec02
+{
+    opacity: 1;
+}
+.shake
+{
+    display: inline-block;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+}
+.shake.shake-hard
+{
+    -webkit-animation-name: shake-hard;
+    -ms-animation-name: shake-hard;
+    animation-name: shake-hard;
+    -webkit-animation-duration: 100ms;
+    -ms-animation-duration: 100ms;
+    animation-duration: 100ms;
+    -webkit-animation-iteration-count: 5;
+    -ms-animation-iteration-count: 5;
+    animation-iteration-count: 5;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-play-state: running;
+    -ms-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.shake.shake-slow1
+{
+    -webkit-animation-name: shake-slow;
+    -ms-animation-name: shake-slow;
+    animation-name: shake-slow;
+    -webkit-animation-duration: 8s;
+    -ms-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-play-state: running;
+    -ms-animation-play-state: running;
+    animation-play-state: running;
+}
+.shake.shake-slow2
+{
+    -webkit-animation-name: shake-slow;
+    -ms-animation-name: shake-slow;
+    animation-name: shake-slow;
+    -webkit-animation-duration: 8s;
+    -ms-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-play-state: running;
+    -ms-animation-play-state: running;
+    animation-play-state: running;
+}
+.shake.shake-slow3
+{
+    -webkit-animation-name: shake-slow;
+    -ms-animation-name: shake-slow;
+    animation-name: shake-slow;
+    -webkit-animation-duration: 8s;
+    -ms-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-play-state: running;
+    -ms-animation-play-state: running;
+    animation-play-state: running;
+}
+

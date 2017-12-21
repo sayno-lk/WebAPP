@@ -1,0 +1,59 @@
+﻿.fadeOutUp{
+	-webkit-animation:fadeOutUp 1.5s infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeOutUp {
+    0% { opacity: 0; bottom: 0px;}
+    40% { opacity: 1; bottom: 12px;}
+    80% { opacity: 0; bottom: 18px;}
+    100% { opacity: 0; bottom: 28px;}
+}
+.fadeOutDown{
+	-webkit-animation:fadeOutDown 1.5s infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeOutDown {
+    0% { opacity: 0; top: 0px;}
+    40% { opacity: 1; top: 12px;}
+    80% { opacity: 0; top: 18px;}
+    100% { opacity: 0; top: 28px;}
+}
+.fadeOutLeft{
+	-webkit-animation:fadeOutLeft 1.5s infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeOutLeft {
+    0% { opacity: 0;right: 0px;}
+    40% { opacity: 1; right: 12px;}
+    80% { opacity: 0; right:18px;}
+    100% { opacity: 0; right:28px;}
+}
+.fadeOutRight{
+	-webkit-animation:fadeOutRight 1.5s infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeOutRight {
+    0% { opacity: 0;left: 0px;}
+    40% { opacity: 1; left: 12px;}
+    80% { opacity: 0; left: 18px;}
+    100% { opacity: 0; left: 28px;}
+}
+
+/*发光*/
+@-webkit-keyframes showHide{0%{ opacity: 0;scale(0);}100%{ opacity: 1;scale(1);}}
+@-moz-keyframes showHide{0%{ opacity: 0;scale(0);}100%{ opacity: 1;scale(1);}}
+@-o-keyframes showHide{0%{ opacity: 0;scale(0);}100%{ opacity: 1;scale(1);}}
+@keyframes showHide{0%{ opacity: 0;scale(0);}100%{ opacity: 1;scale(1);}}
+
+
+
+/*Begin--音乐--Begin*/
+@-webkit-keyframes soundswANI {0% { -webkit-transform: rotate(0deg);}100% { -webkit-transform: rotate(360deg);}}
+@-moz-keyframes soundswANI {0% { -moz-transform: rotate(0deg);}100% { -moz-transform: rotate(360deg);}}
+@-o-keyframes soundswANI {0% { -o-transform: rotate(0deg);}100% { -o-transform: rotate(360deg);}}
+@keyframes soundswANI {0% { transform: rotate(0deg);}100% { transform: rotate(360deg);}}
+/*End--音乐--End*/

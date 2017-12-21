@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title></title>
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-2.1.3.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        .btn-box .input
+        {
+            width: 40%;
+        }
+        .text-box .input
+        {
+            width: 60%;
+            left: 58%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap " id="scene" style="">
+        <div class="div_top">
+            <img src="images/login/1.jpg" class="w-img" />
+        </div>
+        <div class="text-box rel">
+            <input type="text" id="txt_email" class="input" placeholder="E-mail Address" maxlength="100">
+            <img src="images/login/2.jpg" class="w-img" />
+        </div>
+        <div class="btn-box rel">
+            <input type="button" id="btn_login" class="input" onclick="sign()">
+            <img src="images/submit-btn.png" class="w-img" />
+        </div>
+        <div class="wrap-bottom">
+        </div>
+    </div>
+    <script type="text/javascript">
+        function sign() {
+            var postdata = {};
+            postdata.action = "login"; //验证经销商编号
+            postdata.email = $("#txt_email").val();
+            if (postdata.email == "") {
+                alert("请输入邮箱");
+                return;
+            }
+            $.ajax({
+                url: 'ajax/getingeGroup.ashx',
+                type: "post",
+                data: postdata,
+                dataType: 'json',
+                beforeSend: function () {
+                    //$("#p4_tip_img").show();
+                },
+                error: function (e) {
+                    alert("系统繁忙，请稍后...");
+                },
+                success: function (r) {
+                    if (r.data_relult == "1" || r.data_relult == "2") {
+                        location.href = "menu.html?id=" + r.data_msg;
+                    }
+                    else {
+                        alert(r.data_msg);
+                        return;
+                    }
+                }
+            });
+            
+        }
+    </script>
+</body>
+</html>

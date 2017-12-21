@@ -1,0 +1,74 @@
+﻿/*弹出层----开始*/
+.dialog
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: black;
+}
+.dialog-max
+{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+.dialog-content
+{
+    text-align: center;
+    max-width: 420px;
+    min-width: 300px;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+    -webkit-transform: translateX(-50%) translateY(-80%);
+    -moz-transform: translateX(-50%) translateY(-80%);
+    -ms-transform: translateX(-50%) translateY(-80%);
+    transform: translateX(-50%) translateY(-80%);
+}
+.dialog-title
+{
+    display: block;
+    margin: 15px auto;
+    font-weight: bold;
+}
+.dialog-content .dialog-tip
+{
+    padding: 15px;
+    padding-top: 0px;
+}
+.dialog-content .dialog-tip p
+{
+    color: black;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+.dialog-content .dialog-bottom
+{
+    border: 0px;
+    padding-top: 15px;
+}
+.dialog-content .dialog-bottom input
+{
+    border-radius: 5px;
+    font-family: 黑体;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    background: blue;
+    outline: none;
+    -webkit-appearance: none;
+    color: White;
+    cursor: pointer;
+}
+/*弹出层----结束*/

@@ -1,0 +1,205 @@
+﻿.page-show .light
+{
+    -webkit-animation: showHide 1.5s infinite ease-in-out 0s alternate;
+}
+.page-show.sec01 .p1
+{
+    -webkit-animation: fadeInDown 1s linear 0.5s forwards;
+}
+.page-show.sec01 .p2
+{
+    -webkit-animation: show 1s linear 1.5s forwards;
+}
+.page-show.sec01 .p3
+{
+    -webkit-animation: fadeInLeft 1s linear 2.5s forwards;
+}
+.page-show.sec01 .p4
+{
+    -webkit-animation: fadeInRight 1s linear 2.5s forwards;
+}
+.page-show.sec01 .p5
+{
+    -webkit-animation: fadeInUp 1s linear 3s forwards;
+}
+.page-show.sec01 .p6
+{
+    -webkit-animation: show 1s linear 3s forwards;
+}
+.page-show.sec02 .p1
+{
+    -webkit-animation: fadeInRight1 1s linear 0.5s forwards;
+}
+.page-show.sec02 .p2
+{
+    -webkit-animation: show 1s linear 1s forwards;
+}
+.page-show.sec02 .p3
+{
+    -webkit-animation: fadeInRight 1s linear 2s forwards;
+}
+.page-show.sec02 .p4
+{
+    -webkit-animation: show 1s linear 3s forwards;
+}
+.page-show.sec02 .p5
+{
+    -webkit-animation: fadeInUp 1s linear 4s forwards;
+}
+.page-show.sec02 .p6
+{
+    -webkit-animation: fadeInLeft 1s linear 1s forwards;
+}
+.page-show.sec02 .p7
+{
+    -webkit-animation: scaleBig 1s linear 2s forwards;
+}
+.page-show.sec02 .p8
+{
+    -webkit-animation: scaleBig 1s linear 4.5s forwards;
+}
+.page-show.sec03 .p1
+{
+    -webkit-animation: fadeInRight1 1s linear 0.5s forwards;
+}
+.page-show.sec03 .p2
+{
+    -webkit-animation: show 1s linear 1s forwards;
+}
+.page-show.sec03 .p3
+{
+    -webkit-animation: show 1s linear 2s forwards;
+}
+.page-show.sec03 .p4
+{
+    -webkit-animation: fadeInLeft 1s linear 3s forwards;
+}
+.page-show.sec03 .p5
+{
+    -webkit-animation: fadeInRight 1s linear 3s forwards;
+}
+.page-show.sec03 .p6
+{
+    -webkit-animation: fadeInUp 1s linear 4s forwards;
+}
+.page-show.sec04 .line1, .page-show.sec04 .line2
+{
+    -webkit-animation: showHide 1.5s infinite ease-in-out 4.5s alternate;
+}
+.page-show.sec04 .p1
+{
+    -webkit-animation: show 1s linear 0.5s forwards;
+}
+.page-show.sec04 .p2
+{
+    -webkit-animation: show 1s linear 2s forwards;
+}
+.page-show.sec04 .p3
+{
+    -webkit-animation: show 0.5s linear 1.5s forwards;
+}
+.page-show.sec04 .p4
+{
+    -webkit-animation: show 0.5s linear 2s forwards;
+}
+.page-show.sec04 .p5
+{
+    -webkit-animation: scaleSmall 1s linear 2.5s forwards;
+}
+.page-show.sec04 .p6
+{
+    -webkit-animation: show 2s linear 3.5s forwards;
+}
+.page-show.sec04 .p7
+{
+    -webkit-animation: fadeInRight 1.5s linear 1s forwards;
+}
+.page-show.sec04 .p8
+{
+    -webkit-animation: fadeInRight 2s linear 2s forwards;
+}
+.page-show.sec05 .p1
+{
+    -webkit-animation: fadeInRight 1s linear 0.5s forwards;
+}
+.page-show.sec05 .p2
+{
+    -webkit-animation: show 1s linear 2s forwards;
+}
+.page-show.sec05 .p3
+{
+    -webkit-animation: show 1s linear 2s forwards;
+}
+.page-show.sec05 .p4
+{
+    -webkit-animation: show 1s linear 2s forwards;
+}
+.page-show.sec05 .p5
+{
+    -webkit-animation: show 1s linear 2s forwards;
+}
+.page-show.sec05 .p6
+{
+    -webkit-animation: show 1s linear 2s forwards;
+}
+.page-show.sec05 .p7
+{
+    -webkit-animation: show 1s linear 2s forwards;
+}
+.page-show.sec05 .p8
+{
+    -webkit-animation: fadeInUp 1s linear 3s forwards;
+}
+
+.page-show.sec05 .p9
+{
+    -webkit-animation: fadeInUp 1s linear 4s forwards;
+}
+
+.page-show.sec06 .p1
+{
+    -webkit-animation: fadeInDown 1s linear 0.5s forwards;
+}
+.page-show.sec06 .p2
+{
+    -webkit-animation: show 1s linear 1s forwards;
+}
+.page-show.sec06 .p3
+{
+    -webkit-animation: fadeInRight 1s linear 2s forwards;
+}
+.page-show.sec06 .p4
+{
+    -webkit-animation: scaleBig 1s linear 3s forwards;
+}
+.page-show.sec06 .p5
+{
+     -webkit-animation: show 1s linear 0.5s forwards;
+}
+.page-show.sec06 .p6
+{
+     -webkit-animation: fadeInUp 1s linear 1s forwards;
+}
+.page-show.sec07 .p1
+{
+    -webkit-animation: fadeInDown 1s linear 0.5s forwards;
+}
+.page-show.sec07 .p2
+{
+   -webkit-animation: show 1s linear 1s forwards;
+}
+.page-show.sec07 .p3
+{
+    -webkit-animation: show 1s linear 0.5s forwards;
+}
+.page-show.sec07 .p4
+{
+    -webkit-animation: show 1s linear 1s forwards;
+}
+.page-show.sec01, .page-show.sec02, .page-show.sec03, .page-show.sec04, .page-show.sec05, .page-show.sec06, .page-show.sec07
+{
+    animation: fadeIn 1s ease forwards;
+    -moz-animation: fadeIn 1s ease forwards;
+    -webkit-animation: fadeIn 1s ease forwards;
+    -o-animation: fadeIn 1s ease forwards;
+}

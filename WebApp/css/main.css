@@ -1,0 +1,194 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100%; /*background: -moz-linear-gradient(left,#AD7941,#EED6B2);*/ /*Mozilla*/ /*background: -webkit-gradient(linear,0 50%,100% 50%,from(#AD7941),to(#EED6B2));*/ /*Old gradient for webkit*/ /*background: -webkit-linear-gradient(left,#AD7941,#EED6B2);*/ /*new gradient for Webkit*/ /*background: -o-linear-gradient(left,#AD7941,#EED6B2); */ /*Opera11*/
+    background-color: #E1e1E3;
+}
+.wrapper
+{
+    background: url(../images/p2/bg.png) no-repeat 0% 0%;
+    background-size: 100% auto;
+    position: relative;
+}
+.w-img
+{
+    width: 100%;
+}
+.wrapper, .head, .content, .foot
+{
+    max-width: 450px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.wrapper .bottom
+{
+    width: 100%;
+}
+.foot
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+.foot .btn-mask
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: #f2f2f3;
+    z-index: -100;
+}
+.foot .btn-box
+{
+    width: 90%;
+    margin: auto;
+    opacity: 1;
+    display: table;
+}
+.foot .btn-box .btn-item
+{
+    display: table-cell;
+    vertical-align: middle;
+    width: 20%;
+}
+.foot .btn-box .btn-item img
+{
+    width: 70%;
+}
+
+
+input[type="button"], input[type="text"]
+{
+    -webkit-appearance: none; /*ios 默认内阴影*/
+    outline: none;
+    background: none;
+    border: none;
+}
+.fl
+{
+    float: left;
+}
+.spanText
+{
+    font-size: 16px;
+    font-family: 黑体;
+    font-weight: bold;
+}
+.input-none
+{
+    -webkit-appearance: none; /*ios 默认内阴影*/
+    outline: none;
+}
+.head
+{
+    width: 100%; /*height: 48px;     background-image: url(../images/top-bottom.png);     background-repeat: no-repeat;     background-position: 0 bottom;*/
+}
+.head-bg
+{
+    width: 100%;
+    background-image: url(../images/bg-top.png);
+    background-position: 0 top;
+}
+.head div
+{
+    position: absolute;
+    top: 0;
+    height: 45px;
+}
+.head img
+{
+    width: 100%;
+}
+.head-left
+{
+    left: 0;
+    float: left;
+    background-image: url(../images/top-right.png);
+    background-repeat: no-repeat;
+    background-position: right 0;
+}
+.head-right
+{
+    right: 0;
+    float: right;
+}
+.head-right img
+{
+    text-align: left;
+}
+.nav
+{
+    height: 20px;
+    background: url(/images/line.png) no-repeat center top;
+}
+.content
+{
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*底部按钮----开始*/
+.content .sub
+{
+    margin-top: 30px;
+    position: relative;
+}
+.content .sub .i-btn1
+{
+    width: 100px;
+    border-radius: 5px;
+    height: 35px;
+    border: none;
+    font-family: 黑体;
+    font-size: 17px;
+    background-color: #229BCF;
+    color: white;
+}
+/*底部按钮----结束*/
+
+
+.bgsoundsw
+{
+    z-index: 98;
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 24px;
+    height: 24px;
+    background: url(../music/soundSW.png) no-repeat 0 1px;
+    background-size: 24px auto;
+    opacity: 0.5;
+}
+.bgsoundsw dt, .bgsoundsw dd
+{
+    width: 24px;
+    height: 24px;
+    background: url(../music/soundSW.png) no-repeat;
+    background-size: 24px auto;
+}
+.bgsoundsw dd
+{
+    background-position: 0 -73px;
+    display: none;
+}
+.bgsoundsw dt
+{
+    background-position: 0 -36px;
+    -webkit-animation: soundswANI 1.5s infinite linear;
+    -moz-animation: soundswANI 1.5s infinite linear;
+    -o-animation: soundswANI 1.5s infinite linear;
+    animation: soundswANI 1.5s infinite linear;
+}
+

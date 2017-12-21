@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4395E8F-A02A-4413-A738-CA2BE96A47A5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApp</RootNamespace>
+    <AssemblyName>WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Senparc.Weixin, Version=4.18.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.Weixin.4.18.7\lib\net45\Senparc.Weixin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Senparc.Weixin.MP, Version=14.8.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.Weixin.MP.14.8.10\lib\net45\Senparc.Weixin.MP.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\add.css" />
+    <Content Include="css\animation.css" />
+    <Content Include="css\animations.css" />
+    <Content Include="css\dialog.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\main.css" />
+    <Content Include="GetingeGroup\admin\css\menu.css" />
+    <Content Include="GetingeGroup\admin\empList.aspx" />
+    <Content Include="GetingeGroup\admin\menu.ascx" />
+    <Content Include="GetingeGroup\admin\msgList.aspx" />
+    <Content Include="GetingeGroup\admin\msgManage.aspx" />
+    <Content Include="GetingeGroup\Agenda.html" />
+    <Content Include="GetingeGroup\css\animation.css" />
+    <Content Include="GetingeGroup\css\dialog.css" />
+    <Content Include="GetingeGroup\css\index.css" />
+    <Content Include="GetingeGroup\css\moment.css" />
+    <Content Include="GetingeGroup\css\pageShow.css" />
+    <Content Include="GetingeGroup\css\photo.css" />
+    <Content Include="GetingeGroup\css\question.css" />
+    <Content Include="GetingeGroup\images\agenda\1.jpg" />
+    <Content Include="GetingeGroup\images\agenda\10.jpg" />
+    <Content Include="GetingeGroup\images\agenda\11.jpg" />
+    <Content Include="GetingeGroup\images\agenda\2.jpg" />
+    <Content Include="GetingeGroup\images\agenda\3.jpg" />
+    <Content Include="GetingeGroup\images\agenda\4.jpg" />
+    <Content Include="GetingeGroup\images\agenda\5.jpg" />
+    <Content Include="GetingeGroup\images\agenda\6.jpg" />
+    <Content Include="GetingeGroup\images\agenda\7.jpg" />
+    <Content Include="GetingeGroup\images\agenda\8.jpg" />
+    <Content Include="GetingeGroup\images\agenda\9.jpg" />
+    <Content Include="GetingeGroup\images\back-btn.png" />
+    <Content Include="GetingeGroup\images\index\1.jpg" />
+    <Content Include="GetingeGroup\images\index\btn.jpg" />
+    <Content Include="GetingeGroup\images\login\1.jpg" />
+    <Content Include="GetingeGroup\images\login\2.jpg" />
+    <Content Include="GetingeGroup\images\menu\1.jpg" />
+    <Content Include="GetingeGroup\images\menu\btn.jpg" />
+    <Content Include="GetingeGroup\images\speakers\1.png" />
+    <Content Include="GetingeGroup\images\speakers\10.png" />
+    <Content Include="GetingeGroup\images\speakers\11.png" />
+    <Content Include="GetingeGroup\images\speakers\12.png" />
+    <Content Include="GetingeGroup\images\speakers\13.png" />
+    <Content Include="GetingeGroup\images\speakers\14.png" />
+    <Content Include="GetingeGroup\images\speakers\15.png" />
+    <Content Include="GetingeGroup\images\speakers\16.png" />
+    <Content Include="GetingeGroup\images\speakers\17.png" />
+    <Content Include="GetingeGroup\images\speakers\18.png" />
+    <Content Include="GetingeGroup\images\speakers\19.png" />
+    <Content Include="GetingeGroup\images\speakers\2.png" />
+    <Content Include="GetingeGroup\images\speakers\20.png" />
+    <Content Include="GetingeGroup\images\speakers\21.png" />
+    <Content Include="GetingeGroup\images\speakers\22.png" />
+    <Content Include="GetingeGroup\images\speakers\23.png" />
+    <Content Include="GetingeGroup\images\speakers\3.png" />
+    <Content Include="GetingeGroup\images\speakers\4.png" />
+    <Content Include="GetingeGroup\images\speakers\5.png" />
+    <Content Include="GetingeGroup\images\speakers\6.png" />
+    <Content Include="GetingeGroup\images\speakers\7.png" />
+    <Content Include="GetingeGroup\images\speakers\8.png" />
+    <Content Include="GetingeGroup\images\speakers\9.png" />
+    <Content Include="GetingeGroup\images\speakers\bg.jpg" />
+    <Content Include="GetingeGroup\images\speakers\topics1.png" />
+    <Content Include="GetingeGroup\images\speakers\topics2.png" />
+    <Content Include="GetingeGroup\images\speakers\topics3.png" />
+    <Content Include="GetingeGroup\images\submit-btn.png" />
+    <Content Include="GetingeGroup\img\1.jpg" />
+    <Content Include="GetingeGroup\img\10.jpg" />
+    <Content Include="GetingeGroup\img\11.jpg" />
+    <Content Include="GetingeGroup\img\12.jpg" />
+    <Content Include="GetingeGroup\img\13.jpg" />
+    <Content Include="GetingeGroup\img\14.jpg" />
+    <Content Include="GetingeGroup\img\2.jpg" />
+    <Content Include="GetingeGroup\img\3.jpg" />
+    <Content Include="GetingeGroup\img\4.jpg" />
+    <Content Include="GetingeGroup\img\5.jpg" />
+    <Content Include="GetingeGroup\img\6.jpg" />
+    <Content Include="GetingeGroup\img\7.jpg" />
+    <Content Include="GetingeGroup\img\8.jpg" />
+    <Content Include="GetingeGroup\img\9.jpg" />
+    <Content Include="GetingeGroup\img\textbg.jpg" />
+    <Content Include="GetingeGroup\index.html" />
+    <Content Include="GetingeGroup\Login.html" />
+    <Content Include="GetingeGroup\menu.html" />
+    <Content Include="GetingeGroup\Speaker.aspx" />
+    <Content Include="GetingeGroup\SpeakerList.html" />
+    <Content Include="images\1.png" />
+    <Content Include="images\2.png" />
+    <Content Include="images\3.png" />
+    <Content Include="images\arrowLeft.png" />
+    <Content Include="images\arrowRight.png" />
+    <Content Include="images\btn1-1.png" />
+    <Content Include="images\btn1.png" />
+    <Content Include="images\btn2-1.png" />
+    <Content Include="images\btn2.png" />
+    <Content Include="images\btn3-1.png" />
+    <Content Include="images\btn3.png" />
+    <Content Include="images\btn4-1.png" />
+    <Content Include="images\btn4.png" />
+    <Content Include="images\btn5-1.png" />
+    <Content Include="images\btn5.png" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\index-bg.png" />
+    <Content Include="images\index-btn1.png" />
+    <Content Include="images\index-btn2.png" />
+    <Content Include="images\p2\2.png" />
+    <Content Include="images\p2\bg.png" />
+    <Content Include="images\p2\btn-sub.png" />
+    <Content Include="images\p2\btn-update.png" />
+    <Content Include="images\p2\btn-vote.png" />
+    <Content Include="images\share.png" />
+    <Content Include="images\test.jpg" />
+    <Content Include="images\update\bg.png" />
+    <Content Include="images\update\btn-update.png" />
+    <Content Include="images\update\pic_frame.png" />
+    <Content Include="images\vote\bg.png" />
+    <Content Include="images\vote\bg2.png" />
+    <Content Include="images\vote\btn-music.png" />
+    <Content Include="images\vote\btn-vote.png" />
+    <Content Include="images\vote\gonglue.png" />
+    <Content Include="images\vote\search-bg.png" />
+    <Content Include="images\vote\tip.png" />
+    <Content Include="images\vote\top.png" />
+    <Content Include="images\vote\zan.png" />
+    <Content Include="images\win\win.png" />
+    <Content Include="images\ylh\ylh1.png" />
+    <Content Include="images\ylh\ylh2.png" />
+    <Content Include="images\ylh\ylh3.png" />
+    <Content Include="index.html" />
+    <Content Include="js\code.js" />
+    <Content Include="js\dialog.js" />
+    <Content Include="js\getUrl.js" />
+    <Content Include="js\jquery-1.8.3.min.js" />
+    <Content Include="js\regValidate.js" />
+    <Content Include="js\regValidate1.js" />
+    <Content Include="js\share.js" />
+    <Content Include="resLoader\demo.html" />
+    <Content Include="resLoader\resLoader.js" />
+    <Content Include="shake\css\animation.css" />
+    <Content Include="shake\css\csshake.css" />
+    <Content Include="shake\css\index.css" />
+    <Content Include="shake\css\moment.css" />
+    <Content Include="shake\css\pageShow.css" />
+    <Content Include="shake\css\shake.css" />
+    <Content Include="shake\images\05_popup_x.png" />
+    <Content Include="shake\images\07_button.png" />
+    <Content Include="shake\images\07_button_share.png" />
+    <Content Include="shake\images\1.png" />
+    <Content Include="shake\images\2.png" />
+    <Content Include="shake\images\3.png" />
+    <Content Include="shake\images\arrow.png" />
+    <Content Include="shake\images\arrowDown.png" />
+    <Content Include="shake\images\arrowLeft.png" />
+    <Content Include="shake\images\arrowRight.png" />
+    <Content Include="shake\images\icon.jpg" />
+    <Content Include="shake\images\soundSW.png" />
+    <Content Include="shake\images\x.png" />
+    <Content Include="shake\img\1-1.png" />
+    <Content Include="shake\img\1-2.png" />
+    <Content Include="shake\img\1-3.png" />
+    <Content Include="shake\img\1.jpg" />
+    <Content Include="shake\img\2.jpg" />
+    <Content Include="shake\img\3.jpg" />
+    <Content Include="shake\img\soundSW.png" />
+    <Content Include="shake\Index.htm" />
+    <Content Include="shake\js\jquery-1.8.0.min.js" />
+    <Content Include="shake\js\mpPage.js" />
+    <Content Include="shake\js\y29.js" />
+    <Content Include="shake\js\zepto.min.js" />
+    <Content Include="shake\music\music.mp3" />
+    <Content Include="shake\shakeTest\csshake.css" />
+    <Content Include="shake\shakeTest\index.htm" />
+    <Content Include="index.aspx" />
+    <Content Include="js\d.js" />
+    <Content Include="js\jquery-2.1.3.js" />
+    <Content Include="js\jquery-2.1.3.min.js" />
+    <Content Include="shake\touch\css\copy.css" />
+    <Content Include="shake\touch\css\main.css" />
+    <Content Include="shake\touch\img\loading_large.gif" />
+    <Content Include="shake\touch\img\shuizhu.jpg" />
+    <Content Include="shake\touch\js\99_main.js" />
+    <Content Include="shake\touch\js\init.mix.js" />
+    <Content Include="shake\touch\js\Lottery.js" />
+    <Content Include="shake\touch\js\offline.js" />
+    <Content Include="sketch\css\example.css" />
+    <Content Include="sketch\js\sketch.js" />
+    <Content Include="sketch\test.html" />
+    <Content Include="test.aspx" />
+    <Content Include="testOpenExe.htm" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="wtycf\css\conent.css" />
+    <Content Include="wtycf\css\index.css" />
+    <Content Include="wtycf\img\arrow.png" />
+    <Content Include="wtycf\img\bg2.jpg" />
+    <Content Include="wtycf\img\bg\1.jpg" />
+    <Content Include="wtycf\img\bg\2.jpg" />
+    <Content Include="wtycf\img\bg\3.jpg" />
+    <Content Include="wtycf\img\bg\4.jpg" />
+    <Content Include="wtycf\img\bg\5.jpg" />
+    <Content Include="wtycf\img\bg\6.jpg" />
+    <Content Include="wtycf\img\images\intro2.jpg" />
+    <Content Include="wtycf\img\images\line.png" />
+    <Content Include="wtycf\img\p1_content.png" />
+    <Content Include="wtycf\img\p1_content1.png" />
+    <Content Include="wtycf\img\p1_content2.png" />
+    <Content Include="wtycf\img\p1_content3.png" />
+    <Content Include="wtycf\img\p2_content.png" />
+    <Content Include="wtycf\img\p2_content1.png" />
+    <Content Include="wtycf\img\p2_content2.png" />
+    <Content Include="wtycf\img\p2_content3.png" />
+    <Content Include="wtycf\img\p3_content.png" />
+    <Content Include="wtycf\img\p3_content1.png" />
+    <Content Include="wtycf\img\p3_content2.png" />
+    <Content Include="wtycf\img\p3_content3.png" />
+    <Content Include="wtycf\img\p4_content.png" />
+    <Content Include="wtycf\img\p5_content1.png" />
+    <Content Include="wtycf\img\p5_content2.png" />
+    <Content Include="wtycf\img\p5_content3.png" />
+    <Content Include="wtycf\img\p6_button.png" />
+    <Content Include="wtycf\img\images\pointer.png" />
+    <Content Include="wtycf\img\images\pointer2.png" />
+    <Content Include="wtycf\img\qr\1.png" />
+    <Content Include="wtycf\img\qr\qr1.gif" />
+    <Content Include="wtycf\img\soundSW.png" />
+    <Content Include="wtycf\img\qr\qr1.jpg" />
+    <Content Include="wtycf\img\qr\qr2.jpg" />
+    <Content Include="wtycf\img\qr\qr3.jpg" />
+    <Content Include="wtycf\img\qr\qr4.jpg" />
+    <Content Include="wtycf\img\images\adver.png" />
+    <Content Include="wtycf\img\images\adver1.png" />
+    <Content Include="wtycf\index.aspx" />
+    <Content Include="wtycf\js\1.js" />
+    <Content Include="wtycf\js\jquery.touchwipe.1.1.1.js" />
+    <Content Include="wtycf\js\y29.js" />
+    <Content Include="wtycf\js\zepto.min.js" />
+    <Content Include="wtycf\mainQR1.aspx" />
+    <Content Include="wtycf\sound\fudan_bg.mp3" />
+    <Content Include="wtycf\WebForm1.aspx" />
+    <Content Include="zhiwen2\js\common12.js" />
+    <Content Include="zhiwen2\js\idangerous.swiper-2.6.1.min.js" />
+    <Content Include="zhiwen2\js\iscroll2.js" />
+    <Content Include="zhiwen2\js\jquery-2.1.1.min.js" />
+    <Content Include="zhiwen2\js\jquery.transit.min.js" />
+    <Content Include="zhiwen2\js\jweixin-1.0.0.js" />
+    <Content Include="zhiwen2\js\parallax.js" />
+    <Content Include="zhiwen2\zhiwen.htm" />
+    <Content Include="zhiwenTest\content\images\adver.png" />
+    <Content Include="zhiwenTest\content\images\adver1.png" />
+    <Content Include="zhiwenTest\content\images\close.png" />
+    <Content Include="zhiwenTest\content\images\enjoy-video.png" />
+    <Content Include="zhiwenTest\content\images\enjoy.png" />
+    <Content Include="zhiwenTest\content\images\hotspot.png" />
+    <Content Include="zhiwenTest\content\images\intro-bg.jpg" />
+    <Content Include="zhiwenTest\content\images\intro1.jpg" />
+    <Content Include="zhiwenTest\content\images\intro2.jpg" />
+    <Content Include="zhiwenTest\content\images\intro3-1.jpg" />
+    <Content Include="zhiwenTest\content\images\intro3.jpg" />
+    <Content Include="zhiwenTest\content\images\left.png" />
+    <Content Include="zhiwenTest\content\images\line.png" />
+    <Content Include="zhiwenTest\content\images\load.png" />
+    <Content Include="zhiwenTest\content\images\loading2.jpg" />
+    <Content Include="zhiwenTest\content\images\loading3.jpg" />
+    <Content Include="zhiwenTest\content\images\music-btn-off.png" />
+    <Content Include="zhiwenTest\content\images\music-btn.png" />
+    <Content Include="zhiwenTest\content\images\pano-p1.png" />
+    <Content Include="zhiwenTest\content\images\pano-p2.png" />
+    <Content Include="zhiwenTest\content\images\pano-tips.png" />
+    <Content Include="zhiwenTest\content\images\pano-tips2.png" />
+    <Content Include="zhiwenTest\content\images\pano1_o_0.jpg" />
+    <Content Include="zhiwenTest\content\images\pano1_o_1.jpg" />
+    <Content Include="zhiwenTest\content\images\pointer.png" />
+    <Content Include="zhiwenTest\content\images\pointer2.png" />
+    <Content Include="zhiwenTest\content\images\right.png" />
+    <Content Include="zhiwenTest\content\images\share-text.png" />
+    <Content Include="zhiwenTest\content\images\t1.png" />
+    <Content Include="zhiwenTest\content\images\t2.png" />
+    <Content Include="zhiwenTest\content\images\t3.png" />
+    <Content Include="zhiwenTest\content\images\t4.png" />
+    <Content Include="zhiwenTest\content\images\t5.png" />
+    <Content Include="zhiwenTest\content\images\t6.png" />
+    <Content Include="zhiwenTest\content\images\t7.png" />
+    <Content Include="zhiwenTest\content\images\t8.png" />
+    <Content Include="zhiwenTest\content\site.css" />
+    <Content Include="zhiwenTest\css\style.css" />
+    <Content Include="zhiwenTest\hammer.htm" />
+    <Content Include="zhiwenTest\index.htm" />
+    <Content Include="zhiwenTest\scripts\angular.bundled.min.js" />
+    <Content Include="zhiwenTest\scripts\hammer.min.js" />
+    <Content Include="zhiwenTest\scripts\jquery.js" />
+    <Content Include="zhiwenTest\scripts\jquery.min.js" />
+    <Content Include="zhiwenTest\scripts\pano2skin.js" />
+    <Content Include="zhiwenTest\scripts\pano2vrgyro.js" />
+    <Content Include="zhiwenTest\scripts\pano2vr_player.js" />
+    <Content Include="zhiwenTest\scripts\player.js" />
+    <Content Include="zhiwenTest\scripts\preloadjs-0.4.1.min.js" />
+    <Content Include="zhiwenTest\scripts\seco-app.js" />
+    <Content Include="zhiwenTest\scripts\seco-assets.js" />
+    <Content Include="zhiwenTest\scripts\seco-main.js" />
+    <Content Include="zhiwenTest\scripts\seco-ng-mods.js" />
+    <Content Include="zhiwenTest\scripts\seco-ng-touch.js" />
+    <Content Include="zhiwenTest\scripts\swfobject-2.2.js" />
+    <Content Include="zhiwenTest\scripts\WeixinApi.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB\marykay\MaryKayDB.Designer.cs" />
+    <Compile Include="DB\VoteEntity.Designer.cs" />
+    <Compile Include="DB\WebServiceDB.Designer.cs" />
+    <Compile Include="GetingeGroup\admin\empList.aspx.cs">
+      <DependentUpon>empList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetingeGroup\admin\empList.aspx.designer.cs">
+      <DependentUpon>empList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetingeGroup\admin\menu.ascx.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetingeGroup\admin\menu.ascx.designer.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GetingeGroup\admin\model\GetingeGroupDBHerlper.cs" />
+    <Compile Include="GetingeGroup\admin\msgList.aspx.cs">
+      <DependentUpon>msgList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetingeGroup\admin\msgList.aspx.designer.cs">
+      <DependentUpon>msgList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetingeGroup\admin\msgManage.aspx.cs">
+      <DependentUpon>msgManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetingeGroup\admin\msgManage.aspx.designer.cs">
+      <DependentUpon>msgManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetingeGroup\ajax\getingeGroup.ashx.cs">
+      <DependentUpon>getingeGroup.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="GetingeGroup\Speaker.aspx.cs">
+      <DependentUpon>Speaker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetingeGroup\Speaker.aspx.designer.cs">
+      <DependentUpon>Speaker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="model\Access_token.cs" />
+    <Compile Include="model\DBHerlper.cs" />
+    <Compile Include="model\EMail.cs" />
+    <Compile Include="model\JsonHelper.cs" />
+    <Compile Include="model\Log.cs" />
+    <Compile Include="model\OAuth.cs" />
+    <Compile Include="model\OAuth_Token.cs" />
+    <Compile Include="model\Request1.cs" />
+    <Compile Include="model\weixinUser.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wtycf\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wtycf\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wtycf\mainQR1.aspx.cs">
+      <DependentUpon>mainQR1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wtycf\mainQR1.aspx.designer.cs">
+      <DependentUpon>mainQR1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wtycf\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wtycf\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="zhiwen2\js\config.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GetingeGroup\ajax\getingeGroup.ashx" />
+    <Content Include="packages.config" />
+    <Fakes Include="Fakes\NPOI.fakes" />
+    <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2090</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

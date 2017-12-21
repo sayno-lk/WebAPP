@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>js</title>
+    <script language="JavaScript">
+        function Run(strPath) {
+            var a = new String(strPath); 
+            strPath = strPath.toString();
+            alert(a);
+//            exe.value = strPath;
+//            try {
+//                var objShell = new ActiveXObject("wscript.shell");
+//                objShell.Run(strPath);
+//                objShell = null;
+//            }
+//            catch (e) {
+//                alert(e);
+//            }
+        }
+
+        function RunNotePad() {
+            var wsh = new ActiveXObject("wscript.shell");
+            wsh.run("notepad.exe");
+        }
+    </script>
+</head>
+<body>
+    请输入要运行的程序：<br />
+    <input name="exe" type="text" size="20" value="regedit">
+    <button class="button" onclick="Run(0115515)">
+        decide</button>
+    <button class="button" onclick="Run(exe.value)">
+        input</button><br />
+    <button class="button" onclick="RunNotePad()">
+        记事本</button><br />
+    <button class="button" onclick="Run('mspaint')">
+        mspaint</button><br />
+    <button class="button" onclick="Run('calc')">
+        calc</button><br />
+    <button class="button" onclick="Run('cmd')">
+        cmd</button><br />
+    <button class="button" onclick="Run('Regedit')">
+        Regedit</button><br />
+    <button class="button" onclick="Run('Msconfig')">
+        Msconfig</button><br />
+    <button class="button" onclick="Run('file:///D:/EDI/PCstructure/bin/Debug/PCStructure.exe')">
+        PC EXE</button><br />
+    <button class="button" onclick="Run('IEXPLORE.EXE')">
+        IE</button><br />
+    <button class="button" onclick="Run('..')">
+        ..</button><br />
+    <button class="button" onclick="Run('%windir%')">
+        %windir%</button><br />
+    <button class="button" onclick="Run('file:///e:/qq/qq.exe')">
+        运行QQ</button><br />
+    <script type="text/javascript">
+        function exec(command) {
+            window.oldOnError = window.onerror;
+            window._command = command;
+            window.onerror = function (err) {
+                if (err.indexOf('utomation') != -1) {
+                    alert('命令' + window._command + '已经被用户禁止！');
+                    return true;
+                }
+                else {
+
+                    return false;
+                }
+            };
+            var wsh = new ActiveXObject('WScript.Shell');
+            if (wsh) {
+                wsh.Run(command);
+            }
+            window.onerror = window.oldOnError;
+        } 
+    </script>
+    <input type="button" onclick="exec('calc.exe')" value="系统计算器">
+</body>
+</html>

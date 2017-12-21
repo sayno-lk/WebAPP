@@ -1,0 +1,128 @@
+﻿
+.menu
+{
+    background-color: #fff;
+}
+.menu .menu-item
+{
+    margin: 30px 0 10px 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: left;
+    font-family: 'Open Sans' , sans-serif;
+    list-style: none;
+    background: #fff;
+    box-shadow: 0 1px 3px #dedede;
+}
+.menu .menu-item li
+{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    line-height: 20px;
+    position: relative;
+}
+.menu-item li:hover a, .menu-item li.active a
+{
+    background: #8ECB8D;
+    color: #fff;
+}
+.menu-item li a
+{
+    padding: 18px 24px;
+    font-size: 18px;
+    color: #777;
+    text-decoration: none;
+    display: block;
+    -webkit-transition: color 0.2s linear, background 0.2s linear;
+    -moz-transition: color 0.2s linear, background 0.2s linear;
+    -o-transition: color 0.2s linear, background 0.2s linear;
+    transition: color 0.2s linear, background 0.2s linear;
+}
+.menu-item li a i
+{
+    color: #bababa;
+}
+.menu-item li:hover a i, .menu-item li.active a i
+{
+    color: #fff;
+}
+.menu-item li.active
+{
+    background: #8ECB8D;
+    color: #fff;
+}
+.icon-thumbs-up:before
+{
+    content: "\f164";
+}
+
+.menu-item ul
+{
+    top: 56px;
+    left: 0;
+    padding-top: 10px;
+}
+.menu-item ul, .menu-item ul li ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    z-index: 99;
+    width: 140px;
+}
+.zoom-out
+{
+    -webkit-animation: zoomOut 600ms ease both;
+    -moz-animation: zoomOut 600ms ease both;
+    -o-animation: zoomOut 600ms ease both;
+    animation: zoomOut 600ms ease both;
+}
+.menu-item ul li
+{
+    clear: both;
+    width: 100%;
+    border: none;
+}
+.menu-item li
+{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    line-height: 20px;
+    position: relative;
+}
+.menu-item ul li:hover a
+{
+    background: #7bc27a;
+}
+.menu-item li:hover a, .menu-item li.active a
+{
+    background: #8ECB8D;
+    color: #fff;
+}
+.menu-item ul li a
+{
+    padding: 14px 20px;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    clear: both;
+    background: #8ECB8D;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: background 0.2s linear;
+    -moz-transition: background 0.2s linear;
+    -o-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+}
