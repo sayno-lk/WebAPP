@@ -625,7 +625,11 @@
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="lt\" />
+    <Folder Include="MaryKay2\" />
+    <Folder Include="MaryKay3\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="zhiwen2\js\config.js" />
   </ItemGroup>
